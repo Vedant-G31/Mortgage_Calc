@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(4,35,69);
+    background-size: cover;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input {
+    text-align: center;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+.calculator {
+    border: 3px solid black;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    margin: 0 auto;  
+}
+
+.mortgage {
+    padding-bottom: 24px;
+}
+
+.loan, .interestRate, .years, .mortgage{
+   text-align: center;
+   font-size: 24px;
+}
+
+.calculate {
+    margin: 0px auto;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgb(102, 177, 102);
+    color: white;
+    font-size: 24px;
+    transition: all 0.5s;
+}
+
+.calculate:hover {
+    transform: scale(0.8);
+}
+
+.frequencySelect {
+    padding: 24px 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px;
+    margin: 0 auto;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.frequency {
+    background-color: rgb(16,74,181);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.5s;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.frequency:hover {
+    background-color: rgb(50, 118, 207);
+    transform: scale(0.8);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 24px;
+    color: white;
+}
+
+@media (max-width: 487px) {
+    .frequencySelect {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 320px) {
+    input {
+        width: 80%;
+    }
+
+    .loan, .years, .interestRate {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 290px) {
+    input {
+        width: 80%;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript" src="script.js"></script>
+
+    <h2 class="title">Mortgage Calculator</h2>
+    <div class="container">
+        <div class="calculator">
+            <div class="loan">
+                <h5>Loan Amount:</h5>
+                <input type="number" min="0" id="loanValue" value="0">
+            </div>
+            <div class="interestRate">
+                <h5>Interest Rate:</h5>
+                <input type="number" min="0" id="interestValue" value="0">
+            </div>
+            <div class="years">
+                <h5>Years (Amortization):</h5>
+                <input type="number" min="0" id="yearsNo" value="0">
+            </div> 
+            <div class="frequencySelect">
+                <button class="frequency" id="bweek" type="submit" onclick="freq = 26, frColor (26);" >Bi-Weekly</button>
+                <button class="frequency" id="week" type="submit" onclick="freq = 52, frColor (52);">Weekly</button>
+                <button class="frequency" id="month" type="submit" onclick="freq = 12, frColor (12);">Monthly</button>
+            </div>
+            <button class="calculate" type="submit" onclick="payment();">Calculate</button>
+            <div class="mortgage">
+                <h5 id="freqPay"></h5>
+                <span style="display: none;"id="dollarSign">$</span>
+                <p style="display: inline;"id="mortgagePayment"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; 2023
+    </footer>
+</body>
+</html>
