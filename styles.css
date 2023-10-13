@@ -31,11 +31,11 @@ input {
 
 .calculator {
     border: 3px solid black;
-    border-radius: 5%;
+    border-radius: 25px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
-    width: 40%;
+    width: 60%;
     flex-direction: column;
     margin: 0 auto;  
 }
@@ -65,13 +65,13 @@ input {
 }
 
 .frequencySelect {
-    padding: 24px 16px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
+    padding: 24px 16px;
     gap: 4px;
     margin: 0 auto;
     width: 50%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .frequency {
@@ -103,6 +103,10 @@ footer {
         grid-template-columns: auto;
     }
 
+    .calculator {
+        width: 80%;
+    }
+
     input {
         width: 70%;
     }
@@ -110,6 +114,10 @@ footer {
 
 @media (max-width: 320px) {
     input {
+        width: 52%;
+    }
+
+    .calculator {
         width: 80%;
     }
 
@@ -118,8 +126,3 @@ footer {
     }
 }
 
-@media (max-width: 290px) {
-    input {
-        width: 80%;
-    }
-}
