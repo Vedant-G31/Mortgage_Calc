@@ -70,8 +70,8 @@ input {
     padding: 24px 16px;
     gap: 4px;
     margin: 0 auto;
-    width: 50%;
-    border: 1px solid red;
+    width: 30%;
+    /* border: 1px solid red; */
 }
 
 .frequency {
@@ -101,6 +101,7 @@ footer {
     .frequencySelect {
         display: grid;
         grid-template-columns: auto;
+        width: 50%;
     }
 
     .calculator {
